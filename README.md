@@ -1,1 +1,1 @@
-# Equity-Risk-Web-App
+# Equity Risk Web App
