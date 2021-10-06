@@ -12,6 +12,21 @@
 [![Setup Automated](/images/linkedin.svg)](https://www.linkedin.com/in/lykjohn)
 [![Setup Automated](/images/cv.svg)](https://github.com/lykjohn/Resume/blob/main/Resume.pdf)
 
-[What is This About?](#about)&nbsp;|&nbsp;[How It Works](#how_it_works)&nbsp;|&nbsp;[Quick Start](#quick_start)&nbsp;|&nbsp; [Examples](#examples)&nbsp;|&nbsp;[Limitations](#limitations)&nbsp;|&nbsp;[Why This Program?](#differences)&nbsp;|&nbsp;[Acknowledgments](#acknowledge)&nbsp;|&nbsp;[Other Projects](#projects)&nbsp;
+[What is This About?](#about)&nbsp;|&nbsp;[How It Works](#how_it_works)&nbsp;|&nbsp;[Quick Start](#quick_start)&nbsp;|&nbsp; [Examples](#examples)&nbsp;|&nbsp;[Limitations](#limitations)&nbsp;|&nbsp;[Why This Program?](#differences)&nbsp;|&nbsp;[References](#references)&nbsp;|&nbsp;[Other Projects](#projects)&nbsp;
 
+## What is this about? <a name = "about"></a>
+
+## How does this work? <a name = "how_it_works"></a>
+
+## Quick Start <a name = "quick_start"></a>
+
+## Company Examples and Key Takeaways<a name = "examples"></a>
+
+## Limitations <a name = "limitations"></a>
+
+## Why This Program? <a name = "differences"></a>
+
+## References <a name = "references"></a>
+
+## Other Projects <a name = "projects"></a>
 
