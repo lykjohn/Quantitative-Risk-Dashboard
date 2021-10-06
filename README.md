@@ -5,7 +5,8 @@
   
 <h3  align='center'> Quantitative Risk Dashboard - an R Shiny Web Application for Risk Analysis</h3>
 
-[![Setup Automated](https://camo.githubusercontent.com/8122da9a2b1ed771aac788183d941f60054a68d74c426b7a5fd8305a33346f37/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d522d3237364443333f7374796c653d666c61742d737175617265266c6f676f3d52266c6f676f436f6c6f723d7768697465)](https://www.rstudio.com/)
+[![Setup Automated](/images/R.svg)](https://www.r-project.org/)
+[![Setup Automated](/images/RShiny.svg)](https://www.rstudio.com/products/shiny/)
 <br/>
 [![Setup Automated](/images/github.svg)](https://github.com/lykjohn)
 [![Setup Automated](/images/linkedin.svg)](https://www.linkedin.com/in/lykjohn)
