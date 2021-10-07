@@ -24,7 +24,7 @@
 
 ## Limitations <a name = "limitations"></a>
 
-## Why This Program? <a name = "differences"></a>
+## Why This Application? <a name = "differences"></a>
 
 ## References <a name = "references"></a>
 
