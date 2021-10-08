@@ -29,4 +29,9 @@
 ## References <a name = "references"></a>
 
 ## Other Projects <a name = "projects"></a>
-
+<ul>
+  <li> <a href="https://github.com/lykjohn/SEC-Python-Scraper"> U.S. Securities and Exchange Commission (SEC) Python Scraper</a> </li>
+  <li> <a href="https://github.com/lykjohn/Viable-Long-Term-Investment/blob/main/final_report.pdf"> Large-Scale Computation to Identify Viable Long-Term Investment Opportunities</a> </li>
+  <li> <a href="https://github.com/lykjohn/Bayesian-Recession-Forecast/blob/master/bayesian_recession_report.pdf"> Economic Recession Forecast Under the Bayesian Hierarchical Framework</a> </li>
+  <li> <a href="https://github.com/lykjohn/Time-Series-Insurace-Premium/blob/master/premium_modeling_report.pdf"> Evaluating Time Series Models for Predicting Smokers and Non-Smoker Premiums</a> </li>
+</ul>
