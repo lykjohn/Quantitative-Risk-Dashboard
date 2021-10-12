@@ -14,6 +14,8 @@
 
 [What is This About?](#about)&nbsp;|&nbsp;[How It Works](#how_it_works)&nbsp;|&nbsp;[Quick Start](#quick_start)&nbsp;|&nbsp; [Examples](#examples)&nbsp;|&nbsp;[Limitations](#limitations)&nbsp;|&nbsp;[Why This Program?](#differences)&nbsp;|&nbsp;[References](#references)&nbsp;|&nbsp;[Other Projects](#projects)&nbsp;
 
+## Who is this dashboard for? <a name = "about"></a>
+
 ## What is this about? <a name = "about"></a>
 
 ## How does this work? <a name = "how_it_works"></a>
