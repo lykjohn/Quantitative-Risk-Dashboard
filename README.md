@@ -21,6 +21,47 @@ Have you just started your investment journey and wondered how much to invest? D
 The Quantitative Risk Dashboard serves as a risk manager to predict the amount of your net capital loss, given your portfolio strategy. To do this, it evaluates the Value-at-Risk (VaR) metric at a user-specific level. For instance, having a VaR of 100 at a 0.05 level means that there is a 5% likelihood to lose at least $100 of your net capital. Keen on some statistical jargon? This dashboard takes on a statistical approach by modeling single and multiple asset risks using probabilistic techniques. For a single asset, univariate distributions, Pareto tails, and ARMA/GARCH time series models are used to reference the probability of negative returns at tail levels. For a multi-asset portfolio, multivariate distributions and copula methods are used to profile book losses at tail levels. One add-on feature is to perform Exploratory Data Analysis prior to risk-modeling with the primary goal to interpret summary statistics and correlated returns. Another add-on feature is the quadratic programming algorithm that optimizes a portfolio’s allocation based on adequate risk-to-reward measures such as the Sharpe Ratio. 
 
 ## Quick Start <a name = "quick_start"></a>
+### Prerequisites
+
+<ol> 
+ <strong>  <li> Download <a href="https://www.rstudio.com/products/rstudio/download/"> R Studio</a> </li></strong>
+
+  
+ <strong> <li> Install R Libraries:</li></strong>
+  
+```
+  ----- to build backend algorithms -----
+install.packages("corrplot")
+install.packages("tidyr")
+install.packages("metR") # long to install
+install.packages("reshape2")
+install.packages("ggplot2")
+install.packages("gridExtra")
+install.packages("quantmod")
+install.packages("purrr")
+install.packages("MASS")
+install.packages("mnormt")
+install.packages("nimble") # long to install
+install.packages("evir")
+install.packages("fBasics")
+install.packages("fGarch")
+install.packages("fCopulae")
+install.packages("copula")
+install.packages("quadprog")
+install.packages("tseries")
+library("lubridate")
+install.packages("forecast")
+  
+  ----- to build dashboard -----
+install.packages("shiny")
+install.packages("shinydashboard")
+install.packages("shinyWidgets")
+install.packages("shinycssloaders")
+install.packages("shinyBS")
+install.packages("spsComps")
+```
+</ol> 
+
 
 ## Company Examples and Key Takeaways<a name = "examples"></a>
 
