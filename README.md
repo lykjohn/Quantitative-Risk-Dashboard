@@ -25,8 +25,6 @@ The Quantitative Risk Dashboard serves as a risk manager to predict the amount o
 
 <ol> 
  <strong>  <li> Download <a href="https://www.rstudio.com/products/rstudio/download/"> R Studio</a> </li></strong>
-
-  
  <strong> <li> Install R Libraries:</li></strong>
   
 ```
@@ -61,6 +59,10 @@ install.packages("shinyBS")
 install.packages("spsComps")
 ```
 </ol> 
+
+### Single-asset Analysis
+
+### Multiple-asset Analysis
 
 
 ## Company Examples and Key Takeaways<a name = "examples"></a>
