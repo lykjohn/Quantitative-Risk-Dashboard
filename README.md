@@ -52,7 +52,7 @@ install.packages("tseries")
 library("lubridate")
 install.packages("forecast")
   
-  ----- to build dashboard -----
+  ----- to build dashboard components-----
 install.packages("shiny")
 install.packages("shinydashboard")
 install.packages("shinyWidgets")
