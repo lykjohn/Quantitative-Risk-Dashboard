@@ -75,7 +75,10 @@ There are three pahses for performing the univariate analysis- asset specificati
 <details>
   <summary>PHASE 2: Exploratory Dat Analysis </summary>
   The retrieved stock data is further delineated to only contain the stock's adjusted price (in USD).
-  ![EDA-Time Plots](images/EDA-Time Plots.png "EDA-Time Plots") ![EDA-Summary Statistics](images/EDA-Summary Statistics.png "EDA-Summary Statistics")
+  <p float="left">
+    <img src="images/EDA-Time Plots.png" alt='EDA-Time Plots.png' width='475' height='350'>
+    <img src="images/EDA-Summary Statistics.png" alt='EDA-Summary Statistics' width='475' height='350'>
+  </p>
 
 </details>
 
