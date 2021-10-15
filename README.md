@@ -63,24 +63,24 @@ install.packages("spsComps")
 ### Univariate (single-asset) Analysis
 There are three pahses for performing the univariate analysis- asset specification, Exploratory Data Analysis (EDA), and Extreme Value Analysis (EVA). These precedures allow user to firstly, define their asset of choice and the time horizon to consider, secondly, understand the trend and spread of its returns, and thirdly, estimate the proportion of portfolio that was being risked at some specified level. Each of the phases are elaborated below.
 
-<img src="images/Univariate Analysis.png" alt='Univariate Analysis' width='750' height='350' >
+<img src="images/Univariate Analysis.png" alt='Univariate Analysis' width='750' height='350'>
 <details>
   <summary>PHASE 1: Asset Specification </summary>
   Users will specify asset ticker symbols from their asset of choice. One’s asset of choice can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This is equivalent to typing the ticker in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, clicking “Historical Data“, then setting the “Time Period”. R will then load in the specified data from the webpage. The default unit of price data is in USD.
   <br/>
   In the example below, the user is searching up Apple's stock- with the ticker symbol AAPL, to retrieve stock data from 10/01/2019-10/01/2021.
-  <img src="images/Asset Specification.png" alt='Asset Specification' width='1000' height='350' >
+  <img src="images/Asset Specification.png" alt='Asset Specification' width='1000' height='350'>
 </details>
 
 <details>
   <summary>PHASE 2: Exploratory Dat Analysis </summary>
   The retrieved stock data is further delineated to only contain the stock's adjusted price (in USD).
-  <img src="images/EDA-Time Plots.png" alt='EDA-Time Plots' width='500' height='350' >
-  
+  ![EDA-Time Plots](images/EDA-Time Plots.png "EDA-Time Plots") ![EDA-Summary Statistics](images/EDA-Summary Statistics.png "EDA-Summary Statistics")
+
 </details>
 
 ### Multiple-asset Analysis
-<img src="images/Multivariate Analysis.png" alt='Multivariate Analysis' width='750' height='350' >
+<img src="images/Multivariate Analysis.png" alt='Multivariate Analysis' width='750' height='350'>
 
 
 ## Company Examples and Key Takeaways<a name = "examples"></a>
