@@ -61,8 +61,10 @@ install.packages("spsComps")
 </ol> 
 
 ### Single-asset Analysis
+<img src="images/univariate_home.png" alt='Univariate Home' width='750' height='350' >
 
 ### Multiple-asset Analysis
+<img src="images/multivariate_home.png" alt='Univariate Home' width='750' height='350' >
 
 
 ## Company Examples and Key Takeaways<a name = "examples"></a>
