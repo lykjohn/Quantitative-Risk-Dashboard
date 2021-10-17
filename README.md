@@ -65,7 +65,7 @@ There are three pahses for performing the univariate analysis- asset specificati
 
 <img src="images/Univariate Analysis.png" alt='Univariate Analysis' width='750' height='350'>
 <details>
-  <summary>PHASE 1: Asset Specification </summary>
+  <summary><strong>PHASE 1: Asset Specification <strong></summary>
   Users will specify asset ticker symbols from their asset of choice. One’s asset of choice can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This is equivalent to searching up the ticker in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, clicking “Historical Data“, then setting the “Time Period”. R will then load in the resulted data from the webpage. The default unit of price data is in USD. With that in mind, user can now apply Exploratory Data Analysis (EDA) methods to the loaded data.
   <br/>
   In the following example, the user is searching up Apple's stock- with the ticker symbol AAPL, to retrieve stock data from 10/01/2019-10/01/2021.
@@ -73,31 +73,46 @@ There are three pahses for performing the univariate analysis- asset specificati
 </details>
 
 <details>
-  <summary>PHASE 2: Exploratory Data Analysis </summary>
+  <summary><strong>PHASE 2: Exploratory Data Analysis <strong></summary>
   The retrieved stock data is further delineated to only contain the asset's adjusted close price (in USD), which is the price after accounting for corporate actions such as stock-splits. EDA contains 2 steps: visualizing the asset’s empirical trends and assessing the distribution of asset return. After the process, user will develop a descriptive instinct on the the asset’s price evolution. Please see the following example for Apple’s stock over the same period as above. 
-  
-  <ul>
-    <br/>
-    <li> 
-      <strong>Time Plots:</strong> Time plots are what we use to visualize the asset’s trends. After clicking on the [Run Time Plots] button, 2 plots will be generated, demonstrating the price trend and differenced log-returns simultaneously. For the prior, trend is important in identifying the momentum and strength as price evolves. For the later, seekers for its predictability may look at the differenced log-returns, and check for stationarity- the more stationary the series, the more predictable the asset’s return. An asset's return is represented by its log-return. Log-return is used here because it has the nice arithmetic property of normalizing values.
-    </li>
-    <br/>
-    <li> 
-      <strong>Summary Statistics:</strong> How asset returns are distributed would constitute the scale of risk that the asset poses in terms of an account’s gains/losses. After clicking the [Summary Statistics] button, statistics such as the standard deviation, kurtosis, and skewness are tabulated alongside with a boxplot that highlights the 25%, 50% 75% risk thresholds. These are not for evaluating probabilstic risks just yet, but rather purposed for illustrating the spread/extremeness of the asset’s return.
-    </li>
-  </ul>
-  
-  <p float="left">
-    <img src="images/EDA-Time Plots.png" alt='EDA-Time Plots.png' width='475' height='350'>
-    <img src="images/EDA-Summary Statistics.png" alt='EDA-Summary Statistics' width='475' height='350'>
-  </p>
+ <ul>
+  <il> 
+    <details>
+      <summary>Time Plots:</summary> Time plots are what we use to visualize the asset’s trends. After clicking on the [Run Time Plots] button, 2 plots will be generated, demonstrating the price trend and differenced log-returns simultaneously. For the prior, trend is important in identifying the momentum and strength as price evolves. For the later, seekers for its predictability may look at the differenced log-returns, and check for stationarity- the more stationary the series, the more predictable the asset’s return. An asset's return is represented by its log-return. Log-return is used here because it has the nice arithmetic property of normalizing values.
+      <img src="images/EDA-Time Plots.png" alt='EDA-Time Plots.png'>
+    </details>
+  </il>
+  <il>  
+    <details>
+      <summary>Summary Statistics:</summary> How asset returns are distributed would constitute the scale of risk that the asset poses in terms of an account’s gains/losses. After clicking the [Summary Statistics] button, statistics such as the standard deviation, kurtosis, and skewness are tabulated alongside with a boxplot that highlights the 25%, 50% 75% risk thresholds. These are not for evaluating probabilstic risks just yet, but rather purposed for illustrating the spread/extremeness of the asset’s return.
+  <img src="images/EDA-Summary Statistics.png" alt='EDA-Summary Statistics'>
+    </details>
+  </il>
+ </ul>
 </details>
-
+    
 <details>
-  <summary>PHASE 3: Extreme Value Analysis (EVA) </summary>
-  
-  <img src="images/EVA-Hist&QQ.png" alt='EVA-Hist&QQ.png'>
-  
+  <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong></summary>
+    
+    <ul>
+      <il>
+        <details>
+        <summary>Univariate Tails:</summary>
+          <ul>
+            <il>
+              this is histogram & plot
+              <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>
+            </il>
+            <br/>
+            <il>
+              this is 
+              <br/>
+              <img src="images/EVA-Univariate Tails-Risk Table.png" alt='EVA-Univariate Tails-Risk Table'>
+            </il>
+           </ul>
+        </details>
+       </il>
+      </ul>
 </details>
 
 ### Multiple-asset Analysis
