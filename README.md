@@ -96,6 +96,8 @@ There are three pahses for performing the univariate analysis- asset specificati
 <details>
   <summary>PHASE 3: Extreme Value Analysis (EVA) </summary>
   
+  <img src="images/EVA-Hist&QQ.png" alt='EVA-Hist&QQ.png'>
+  
 </details>
 
 ### Multiple-asset Analysis
