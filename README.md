@@ -100,15 +100,16 @@ There are three pahses for performing the univariate analysis- asset specificati
           <summary>Univariate Tails:</summary>
               Here, various distribution curves- Normal, Student-t, Double-Exponential, and Generalized Error Distribution- are used to fit the log-returns of the speceified asset; qauntile-quantile plots are also used to compare the empirical tail distribution with the theoretical ones. Users will select the diistribution that best fit the asset's log-returns before constructing risk models. 
               <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>
-          
         </details>
-        
+      </il> 
+      <il>
         <details>
-          <summary>Generalized Pareto Distibutions:</summary>
-              
+          <summary>UGeneralized Pareto Tails:</summary>
+              Here, various distribution curves- Normal, Student-t, Double-Exponential, and Generalized Error Distribution- are used to fit the log-returns of the speceified asset; qauntile-quantile plots are also used to compare the empirical tail distribution with the theoretical ones. Users will select the diistribution that best fit the asset's log-returns before constructing risk models. 
+              <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>
         </details>
-       </il>
-    </ul>
+      </il> 
+     </ul>
 </details>
 
 ### Multiple-asset Analysis
