@@ -98,12 +98,18 @@ There are three pahses for performing the univariate analysis- asset specificati
      <il>
         <details>
           <summary>Univariate Tails:</summary>
-              Here, various distribution curves- Normal, Student-t, Double-Exponential, and Generalized Error Distribution- are used to fit the log-returns of the speceified asset; qauntile-quantile plots are also used to compare the empirical tail distribution with the theoretical ones. Users will select the diistribution that best fit the asset's log-returns before constructing risk models. For instance, the Double Exponential and ZGeneralized Error Distribution seems to best fit AAPL's log returns over the 1-year period.
+              Here, various distribution curves- Normal, Student-t, Double-Exponential (DExp), and Generalized Error Distribution (GED)- are used to fit the log-returns of the speceified asset; qauntile-quantile plots are also used to compare the empirical tail distribution with the theoretical ones. Users will select the diistribution that best fit the asset's log-returns before constructing risk models. For instance according to histograms and qqplots, the DExp and GED models seem to best fit AAPL's log returns from 10/01/2019 to 10/01/2021.
               <br/>
               <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>   
               <br/>
-          
+              The risk table displays the relative VaR and relative Expected Shortfall predicted by the selected models. Users can reference their risk based on the best-fitted model determined above. For instance, the DExp or GED models both predicts that an an investment in AAPL's stock has a 5% probability of losing at least 3% and on average 5%.
+              <img src="images/EVA-Univariate Tails-Risk Table.png" alt='EVA-Univariate Tails-Hist & QQ'>
         </details>
+     </il>
+     <il>
+       <details>
+            <summary>Generalized Pareto Tails:</summary>
+       </details>
      </il>
   </ul>
      
