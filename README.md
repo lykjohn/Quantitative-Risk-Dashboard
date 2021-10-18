@@ -106,7 +106,7 @@ There are three pahses for performing the univariate analysis- asset specificati
         </details>
         <details>
           <summary>Generalized Pareto Distibutions:</summary>
-              GPD here 
+              
         </details>
        </il>
     </ul>
