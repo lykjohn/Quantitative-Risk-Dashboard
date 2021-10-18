@@ -125,7 +125,25 @@ There are three pahses for performing the univariate analysis- asset specificati
      <il>
        <details>
             <summary>GARCH Models:</summary>
-             GARCH here.
+            summary table here
+            <br/>
+            <img src="images/EVA-GARCH Models-Summary Table.png" alt='EVA-GARCH Models-Summary Table'>
+            <br/>
+            Vol Res Est here
+            <br/>
+            <img src="images/EVA-GARCH Models-Vol Res Est.png" alt='EVA-GARCH Models-Vol Res Est'>
+            <br/>
+            Res Hist & QQ here
+            <br/>
+            <img src="images/EVA-GARCH Models-Res Hist & QQ.png" alt='EVA-GARCH Models-Res Hist & QQ'>
+            <br/>
+            Res Squared ACF here
+            <br/>
+            <img src="images/EVA-GARCH Models-Res Squared ACF.png" alt='EVA-GARCH Models-Res Squared ACF'>
+            <br/>
+            Risk Table here
+            <br/>
+            <img src="images/EVA-GARCH Models-Risk Table.png" alt='EVA-GARCH Models-Risk Table'>
        </details>
      </il>
   </ul>
