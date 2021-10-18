@@ -93,26 +93,21 @@ There are three pahses for performing the univariate analysis- asset specificati
     
 <details>
   <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong></summary>
-    
+    The goal of EVA is to seek probability distributions that best fit the tails of the asset's log returns, which in turn helps accurately model the Value-at-Risk(VaR) and Expected Shortfalls of an investment. To do this, some off-the-shelf univariate distributions are first examined, followed by Generalized Pareto Distibutions, then time-series ARMA/GARCH variants to model returns & volatilies with monitored residuals. 
     <ul>
       <il>
         <details>
-        <summary>Univariate Tails:</summary>
-          <ul>
-            <il>
-              this is histogram & plot
+          <summary>Univariate Tails:</summary>
+              Here, various distribution curves- Normal, Student-t, Double-Exponential, and Generalized Error Distribution- are used to fit the log-returns of the speceified asset; qauntile-quantile plots are also used to compare the empirical tail distribution with the theoretical ones. Users will select the diistribution that best fit the asset's log-returns before constructing risk models. 
               <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>
-            </il>
-            <br/>
-            <il>
-              this is 
-              <br/>
-              <img src="images/EVA-Univariate Tails-Risk Table.png" alt='EVA-Univariate Tails-Risk Table'>
-            </il>
-           </ul>
+        </details>
+        <details>
+          <summary>Univariate Tails:</summary>
+              Here, various distribution curves- Normal, Student-t, Double-Exponential, and Generalized Error Distribution- are used to fit the log-returns of the speceified asset; qauntile-quantile plots are also used to compare the empirical tail distribution with the theoretical ones. Users will select the diistribution that best fit the asset's log-returns before constructing risk models. 
+              <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>
         </details>
        </il>
-      </ul>
+    </ul>
 </details>
 
 ### Multiple-asset Analysis
