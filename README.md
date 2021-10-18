@@ -122,6 +122,12 @@ There are three pahses for performing the univariate analysis- asset specificati
             <img src="images/EVA-GP Tails-Risk Table.png" alt='EVA-GP Tails-Risk Table'>
        </details>
      </il>
+     <il>
+       <details>
+            <summary>GARCH Models:</summary>
+             GARCH here.
+       </details>
+     </il>
   </ul>
 </details>
 
