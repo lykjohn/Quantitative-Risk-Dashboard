@@ -94,21 +94,41 @@ There are three pahses for performing the univariate analysis- asset specificati
 <details>
   <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong></summary>
     The goal of EVA is to seek probability distributions that best fit the tails of the asset's log returns, which in turn helps accurately model the Value-at-Risk(VaR) and Expected Shortfalls of an investment. To do this, some off-the-shelf univariate distributions are first examined, followed by Generalized Pareto Distibutions, then time-series ARMA/GARCH variants to model returns & volatilies with monitored residuals. 
-    <ul>
-      <il>
+   <ul>
+     <il>
         <details>
           <summary>Univariate Tails:</summary>
-              Here, various distribution curves- Normal, Student-t, Double-Exponential, and Generalized Error Distribution- are used to fit the log-returns of the speceified asset; qauntile-quantile plots are also used to compare the empirical tail distribution with the theoretical ones. Users will select the diistribution that best fit the asset's log-returns before constructing risk models. 
-              <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>
-          
+              Here, various distribution curves- Normal, Student-t, Double-Exponential (DExp), and Generalized Error Distribution (GED)- are used to fit the log-returns of the speceified asset; qauntile-quantile plots are also used to compare the empirical tail distribution with the theoretical ones. To see these results, please hit the [Fit Histograms and QQ pLots] button. Users will select the diistribution that best fit the asset's log-returns before constructing risk models. For instance according to histograms and qqplots, the DExp and GED models seem to best fit AAPL's log-returns from 10/01/2019 to 10/01/2021.
+              <br/>
+              <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>   
+              <br/>
+              The risk table displays the relative VaR and relative Expected Shortfall predicted by the selected models. To see these results, please hit the [Run Risk Table] button. Users can reference their risk based on the best-fitted model determined above. For instance, the DExp or GED models both predicts that an investment in AAPL's stock has a 5% probability of losing at least 3% and on average losing 5%.
+              <img src="images/EVA-Univariate Tails-Risk Table.png" alt='EVA-Univariate Tails-Hist & QQ'>
         </details>
-        
-        <details>
-          <summary>Generalized Pareto Distibutions:</summary>
-              
-        </details>
-       </il>
-    </ul>
+     </il>
+     <il>
+       <details>
+            <summary>Generalized Pareto Tails:</summary>
+            While risk analyses are most concerned about the accuracy of loss projections, most distributions fail to capture the tail probabilities of an asset's log-returns. This is why the Generalized Pareto Distribution (GPD) is designed, to be fitted to exceedances over a threshold. After specifying a risk level, users have the option to click the [Run ECDF Plots] button to observe the zoomed in transgression of the empirical cumulative structure of the loss probabilities.
+            <br/>
+            <img src="images/EVA-GP Tails-ECDF Plots.png" alt='EVA-GP Tails-ECDF Plots'>
+            <br/>
+            Next, users can click the [Run Pareto Shape Plot] button to explore GPD's shape parameter plotted over different thresholds at different exceedances, then select the threshold at which the shape is the most stable. This is to ensure that a persistent shape estimate as for small and large sample sizes, but please note that the larger the shape parameter, the heavier the tail return, and vice versa. 
+            <br/>
+            <img src="images/EVA-GP Tails-Shape Plots.png" alt='EVA-GP Tails-Shape Plots'>
+            <br/>
+            It turns out that the shape parameter seems to be the most stable at the 0.002 threshold. Observations may vary for different users. Once the proper threshold is selected, users may specify it in the GPD threshold field. Hit the [Run Risk Table] button and 3 vizuals will be produced. The first vizual is the risk table containing the relative VaR and relative Expected Shortfall predicted by the specified GPD model. Same as DExp and GED, the GPD model predicts that an investment in AAPL's stock has a 5% probability of losing at least 3% and on average losing 5%. The second visual shows the goodness of fit of the Pareto right tail. The closer the 1-F(x) are to the line, the better the model's fit. The third visual ilustrates the stableness of the chosen threshold at the risk-level cut-off. The less fluctuation along decreasing exeedances indicates a more stable threshold. 
+            <br/>
+            <img src="images/EVA-GP Tails-Risk Table.png" alt='EVA-GP Tails-Risk Table'>
+       </details>
+     </il>
+     <il>
+       <details>
+            <summary>GARCH Models:</summary>
+             GARCH here.
+       </details>
+     </il>
+  </ul>
 </details>
 
 ### Multiple-asset Analysis
