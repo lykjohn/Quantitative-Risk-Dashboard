@@ -129,7 +129,7 @@ There are three pahses for performing the univariate analysis- asset specificati
             <br/>
             <img src="images/EVA-GARCH Models-Summary Table.png" alt='EVA-GARCH Models-Summary Table'>
             <br/>
-            Vol Res Est here
+            To take into account volatility clustering, a phenomenon where a large swing is likely followed by another large swing in asset returns. 
             <br/>
             <img src="images/EVA-GARCH Models-Vol Res Est.png" alt='EVA-GARCH Models-Vol Res Est'>
             <br/>
