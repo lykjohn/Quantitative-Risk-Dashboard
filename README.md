@@ -129,7 +129,7 @@ There are three pahses for performing the univariate analysis- asset specificati
             <br/>
             <img src="images/EVA-GARCH Models-Summary Table.png" alt='EVA-GARCH Models-Summary Table'>
             <br/>
-            To take into account volatility clustering- a phenomenon where a large swing is likely followed by another large swing in asset returns, 
+            Volatility clustering is a phenomenon where one large swing in asset return will likely be followed by another large swing. For example, during the COVID-19 pandemic, the S&P 500 Index plummeted 15% in the first week, followed by at least a 10% drop in the next few weeks. The volatility (sigma) component in the GARCH model is coupled with white noise innovations, specifically Normal, Studnet-t, and GED with the goal of preserve the persistence of outlier values. For a given innovation, two graphs are plotted- the estimated volatilities and the estimated residuals plots. For the former, the closer the red line traces the asset returns the more persistently the volatility is captured; for the later, the more the series look like a stationary white noise, the more accuratedly the residuals are estimated.
             <br/>
             <img src="images/EVA-GARCH Models-Vol Res Est.png" alt='EVA-GARCH Models-Vol Res Est'>
             <br/>
