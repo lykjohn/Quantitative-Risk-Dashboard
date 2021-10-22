@@ -102,7 +102,7 @@ There are three pahses for performing the univariate analysis- asset specificati
               <br/>
               <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>   
               <br/>
-              The risk table displays the relative VaR and relative Expected Shortfall predicted by the selected models. To see these results, please hit the [Run Risk Table] button. Users can reference their risk based on the best-fitted model determined above. For instance, the DExp or GED models both predicts that an investment in AAPL's stock has a 5% probability of losing at least 3% and on average losing 5%.
+              The risk table displays the relative VaR and relative Expected Shortfall predicted by the selected models. To see these results, please hit the [Run Risk Table] button. Users can reference their risk based on the best-fitted model determined above. For instance, the GED model predicts that an investment in AAPL's stock has a 5% probability of losing at least 3% and on average losing 5.44%.
               <img src="images/EVA-Univariate Tails-Risk Table.png" alt='EVA-Univariate Tails-Hist & QQ'>
         </details>
      </il>
@@ -117,7 +117,7 @@ There are three pahses for performing the univariate analysis- asset specificati
             <br/>
             <img src="images/EVA-GP Tails-Shape Plots.png" alt='EVA-GP Tails-Shape Plots'>
             <br/>
-            It turns out that the shape parameter seems to be the most stable at the 0.002 threshold. Observations may vary for different users. Once the proper threshold is selected, users may specify it in the GPD threshold field. Hit the [Run Risk Table] button and 3 vizuals will be produced. The first vizual is the risk table containing the relative VaR and relative Expected Shortfall predicted by the specified GPD model. Same as DExp and GED, the GPD model predicts that an investment in AAPL's stock has a 5% probability of losing at least 3% and on average losing 5%. The second visual shows the goodness of fit of the Pareto right tail. The closer the 1-F(x) are to the line, the better the model's fit. The third visual ilustrates the stableness of the chosen threshold at the risk-level cut-off. The less fluctuation along decreasing exeedances indicates a more stable threshold. 
+            It turns out that the shape parameter seems to be the most stable at the 0.002 threshold. Observations may vary for different users. Once the proper threshold is selected, users may specify it in the GPD threshold field. Hit the [Run Risk Table] button and 3 vizuals will be produced. The first vizual is the risk table containing the relative VaR and relative Expected Shortfall predicted by the specified GPD model. Same as DExp and GED, the GPD model predicts that an investment in AAPL's stock has a 5% probability of losing at least 3.38% and on average losing 5.39%. The second visual shows the goodness of fit of the Pareto right tail. The closer the 1-F(x) are to the line, the better the model's fit. The third visual ilustrates the stableness of the chosen threshold at the risk-level cut-off. The less fluctuation along decreasing exeedances indicates a more stable threshold. 
             <br/>
             <img src="images/EVA-GP Tails-Risk Table.png" alt='EVA-GP Tails-Risk Table'>
        </details>
