@@ -137,7 +137,7 @@ There are three pahses for performing the univariate analysis- asset specificati
             <br/>
             <img src="images/EVA-GARCH Models-Res Hist & QQ.png" alt='EVA-GARCH Models-Res Hist & QQ'>
             <br/>
-            Res Squared ACF here
+            If the estimates are correct, then the error from the predictive model should be uncorrelated with estimates you have.The frist 3 Ljung-Box tests examine whether the ARMA part of the model yields uncorrelated residuals. The last 3 Ljung-Box tests examine whether the GARCH part of the model yields uncorrelated residuals, which it should. User can also use a autocorrelation plot to view the correlation between squared residuals across lags, assuming different innovations.
             <br/>
             <img src="images/EVA-GARCH Models-Res Squared ACF.png" alt='EVA-GARCH Models-Res Squared ACF'>
             <br/>
