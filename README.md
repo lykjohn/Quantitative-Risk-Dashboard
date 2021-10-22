@@ -149,7 +149,7 @@ There are three pahses for performing the univariate analysis- asset specificati
   </ul>
 </details>
 
-### Multiple-asset Analysis
+### Multivariate (multiple-asset) Analysis
 <img src="images/Multivariate Analysis.png" alt='Multivariate Analysis' width='750' height='350'>
 
 
