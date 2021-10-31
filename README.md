@@ -102,7 +102,7 @@ There are three pahses for performing the univariate analysis- asset specificati
               <br/>
               <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>   
               <br/>
-              The risk table displays the relative VaR and relative Expected Shortfall predicted by the selected models. To see these results, please hit the [Run Risk Table] button. Users can reference their risk based on the best-fitted model determined above. For instance, the GED model predicts that an investment in AAPL's stock has a 5% probability of losing at least 3% and on average losing 5.44%.
+              The risk table displays the relative VaR and relative Expected Shortfall predicted by the selected models. To see these results, please hit the [Run Risk Table] button. Users can reference their risk based on the best-fitted model determined above. For instance, the GED model predicts that an investment in AAPL's stock has a 5% probability of losing at least 3% and on average losing 5.44%.<br/>
               <img src="images/EVA-Univariate Tails-Risk Table.png" alt='EVA-Univariate Tails-Hist & QQ'>
         </details>
      </il>
@@ -170,13 +170,13 @@ There are four pahses for performing the multivariate analysis- asset specificat
  <ul>
   <il> 
     <details>
-      <summary>Scatter Matrix:</summary> A scatter matrix is used to plot the relationship between pair variants of asset returns. It shows the direction, magnitude, linearity, strenght, and potential outliers within a return relationship.
+      <summary>Scatter Matrix:</summary> A scatter matrix is used to plot the relationships between pair variants of asset returns. It shows the direction, magnitude, linearity, strenght, and potential outliers within a return relationship.
       <ul>
-        <il>Direction: </il><br/>
-        <il>Magnitude: </il><br/>
-        <il>Linearity: </il><br/>
-        <il>Strength: </il><br/>
-        <il>Potential Outliers: </il>
+        <li>Direction: positive or negative; positive meaning as asset X's return increases (decreases), asset Y's return increases (decreases) as well; negative meaning as asset X's return increases (decreases), the asset Y's return decreases (increases.</li><br/>
+        <li>Magnitude: </li><br/>
+        <li>Linearity: </li><br/>
+        <li>Strength: </li><br/>
+        <li>Potential Outliers: </li>
       </ul>
       <img src="images/EDA-Scatter Matrix.png" alt='EDA-Scatter Matrix.png'>
     </details>
