@@ -177,7 +177,7 @@ There are four pahses for performing the multivariate analysis- asset specificat
         <li>Strength: weak, moderate or strong. the more spread out the points are, the weaker the relationship. If the points are clearly clustered, or closely follow a curve or line, the relationship is described as strong.</li>
         <li>Potential Outliers: exists or don't exist.  exists for the point or points that are farthest from the regression line; these points normally stands out. DOn't exists for points closely clustered around the regression line; these points normally don't stand out.</li>
       </ul>
-      In the example below, 
+      Take LMT and TSLA's returns for example, 
       <img src="images/EDA-Scatter Matrix.png" alt='EDA-Scatter Matrix.png'>
     </details>
   </il>
