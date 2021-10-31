@@ -171,19 +171,19 @@ There are four pahses for performing the multivariate analysis- asset specificat
   <il> 
     <details>
       <summary>Scatter Matrix:</summary> Time plots are what we use to visualize the asset’s trends. After clicking on the [Run Time Plots] button, 2 plots will be generated, demonstrating the price trend and differenced log-returns simultaneously. For the prior, trend is important in identifying the momentum and strength as price evolves. For the later, seekers for its predictability may look at the differenced log-returns, and check for stationarity- the more stationary the series, the more predictable the asset’s return. An asset's return is represented by its log-return. Log-return is used here because it has the nice arithmetic property of normalizing values.
-      <img src="images/EDA-Scatter Matrix.png" alt='EDA-Time Plots.png'>
+      <img src="images/EDA-Scatter Matrix.png" alt='EDA-Scatter Matrix.png'>
     </details>
   </il>
   <il>  
     <details>
       <summary>Quantile-Quantile Plots:</summary> How asset returns are distributed would constitute the scale of risk that the asset poses in terms of an account’s gains/losses. After clicking the [Summary Statistics] button, statistics such as the standard deviation, kurtosis, and skewness are tabulated alongside with a boxplot that highlights the 25%, 50% 75% risk thresholds. These are not for evaluating probabilstic risks just yet, but rather purposed for illustrating the spread/extremeness of the asset’s return.
-  <img src="images/EDA-Multivariate QQPlots.png" alt='EDA-Summary Statistics'>
+  <img src="images/EDA-Multivariate QQPlots.png" alt='DA-Multivariate QQPlots'>
     </details>
   </il>
   <il>  
     <details>
       <summary>Correlation Martix:</summary> How asset returns are distributed would constitute the scale of risk that the asset poses in terms of an account’s gains/losses. After clicking the [Summary Statistics] button, statistics such as the standard deviation, kurtosis, and skewness are tabulated alongside with a boxplot that highlights the 25%, 50% 75% risk thresholds. These are not for evaluating probabilstic risks just yet, but rather purposed for illustrating the spread/extremeness of the asset’s return.
-  <img src="images/EDA-Correlation Matrix.png" alt='EDA-Summary Statistics'>
+  <img src="images/EDA-Correlation Matrix.png" alt='EDA-Correlation Matrix'>
     </details>
   </il>
  </ul>
