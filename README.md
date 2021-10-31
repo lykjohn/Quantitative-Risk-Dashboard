@@ -74,7 +74,7 @@ There are three pahses for performing the univariate analysis- asset specificati
 
 <details>
   <summary><strong>PHASE 2: Exploratory Data Analysis (EDA)<strong></summary>
-  The retrieved stock data is further delineated to only contain the asset's adjusted close price (in USD), which is the price after accounting for corporate actions such as stock-splits. EDA contains 2 steps: visualizing the asset’s empirical trends and assessing the distribution of asset return. After the process, user will develop a descriptive instinct on the the asset’s price evolution. Please see the following example for Apple’s stock over the same period as above. 
+  The retrieved stock data is further delineated to only contain the asset's adjusted close price (in USD), which is the price after accounting for corporate actions such as stock-splits. EDA contains 2 steps: first, visualizing the asset’s empirical trends and second, assessing the distribution of asset return. After the process, user will develop a descriptive instinct on the the asset’s price evolution. Please see the following example for Apple’s stock over the same period as above. 
  <ul>
   <il> 
     <details>
@@ -166,11 +166,11 @@ There are four pahses for performing the multivariate analysis- asset specificat
     
 <details>
   <summary><strong>PHASE 2: Exploratory Data Analysis (EDA)<strong></summary>
-  The retrieved stock data is further delineated to only contain the asset's adjusted close price (in USD), which is the price after accounting for corporate actions such as stock-splits. EDA contains 2 steps: visualizing the asset’s empirical trends and assessing the distribution of asset return. After the process, user will develop a descriptive instinct on the the asset’s price evolution. Please see the following example for Apple’s stock over the same period as above. 
+  Here, EDA contains 3 parts: plotting pairwise  relationship between asset returns, selecting distribution that best fits the general tail extremes, and identifying correlations between asset returns forf hedging puroses. Please see the following for implementing these parts on the Apple, JP Morgan, Lockcheed Martin, and Tesla's stock data. 
  <ul>
   <il> 
     <details>
-      <summary>Scatter Matrix:</summary> Time plots are what we use to visualize the asset’s trends. After clicking on the [Run Time Plots] button, 2 plots will be generated, demonstrating the price trend and differenced log-returns simultaneously. For the prior, trend is important in identifying the momentum and strength as price evolves. For the later, seekers for its predictability may look at the differenced log-returns, and check for stationarity- the more stationary the series, the more predictable the asset’s return. An asset's return is represented by its log-return. Log-return is used here because it has the nice arithmetic property of normalizing values.
+      <summary>Scatter Matrix:</summary> A scatter matrix is used to  are what we use to visualize the asset’s trends. After clicking on the [Run Time Plots] button, 2 plots will be generated, demonstrating the price trend and differenced log-returns simultaneously. For the prior, trend is important in identifying the momentum and strength as price evolves. For the later, seekers for its predictability may look at the differenced log-returns, and check for stationarity- the more stationary the series, the more predictable the asset’s return. An asset's return is represented by its log-return. Log-return is used here because it has the nice arithmetic property of normalizing values.
       <img src="images/EDA-Scatter Matrix.png" alt='EDA-Scatter Matrix.png'>
     </details>
   </il>
