@@ -156,9 +156,9 @@ There are four pahses for performing the multivariate analysis- asset specificat
 
 <details>
   <summary><strong>PHASE 1: Asset Specification <strong></summary>
-  Users will specify the ticker symbol,  from their asset of choice. One’s asset of choice can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This is equivalent to searching up the ticker in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, clicking “Historical Data“, then setting the “Time Period”. R will then load in the resulted data from the webpage. The default unit of price data is in USD. With that in mind, user can now apply Exploratory Data Analysis (EDA) methods to the loaded data.
+  Users will specify the ticker symbol, quantity, and current price for each asset of their choice. One’s chosen assets can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This process replaces manual asset lookupd in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, and compiles a dataframe consisting the asset returns ready for analysis. The default unit of price data is in USD. With that in mind, user can now apply Exploratory Data Analysis (EDA) methods to the loaded data.
   <br/>
-  In the following example, the user is searching up Apple's stock- with the ticker symbol AAPL, to retrieve stock data from 10/01/2019-10/01/2021.
+  In the following example, the user is searching up Apple (AAPL), JP Morgan (JPM), Lockheed Martin (LMT), and Tesla (TSLA)'s stocks to retrieve return data from 10/31/2019-10/31/2021.
   <img src="images/Multivariate-Asset Specification.png" alt='Asset Specification' width='1000' height='350'>
 </details>
 
