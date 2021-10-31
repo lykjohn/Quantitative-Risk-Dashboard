@@ -170,7 +170,14 @@ There are four pahses for performing the multivariate analysis- asset specificat
  <ul>
   <il> 
     <details>
-      <summary>Scatter Matrix:</summary> A scatter matrix is used to  are what we use to visualize the asset’s trends. After clicking on the [Run Time Plots] button, 2 plots will be generated, demonstrating the price trend and differenced log-returns simultaneously. For the prior, trend is important in identifying the momentum and strength as price evolves. For the later, seekers for its predictability may look at the differenced log-returns, and check for stationarity- the more stationary the series, the more predictable the asset’s return. An asset's return is represented by its log-return. Log-return is used here because it has the nice arithmetic property of normalizing values.
+      <summary>Scatter Matrix:</summary> A scatter matrix is used to plot the relationship between pair variants of asset returns. It shows the direction, magnitude, linearity, strenght, and potential outliers within a return relationship.
+      <ul>
+        <il>Direction: </il><br/>
+        <il>Magnitude: </il><br/>
+        <il>Linearity: </il><br/>
+        <il>Strength: </il><br/>
+        <il>Potential Outliers: </il>
+      </ul>
       <img src="images/EDA-Scatter Matrix.png" alt='EDA-Scatter Matrix.png'>
     </details>
   </il>
