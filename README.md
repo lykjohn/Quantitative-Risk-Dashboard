@@ -73,7 +73,7 @@ There are three pahses for performing the univariate analysis- asset specificati
 </details>
 
 <details>
-  <summary><strong>PHASE 2: Exploratory Data Analysis <strong></summary>
+  <summary><strong>PHASE 2: Exploratory Data Analysis (EDA)<strong></summary>
   The retrieved stock data is further delineated to only contain the asset's adjusted close price (in USD), which is the price after accounting for corporate actions such as stock-splits. EDA contains 2 steps: visualizing the asset’s empirical trends and assessing the distribution of asset return. After the process, user will develop a descriptive instinct on the the asset’s price evolution. Please see the following example for Apple’s stock over the same period as above. 
  <ul>
   <il> 
@@ -160,6 +160,14 @@ There are four pahses for performing the multivariate analysis- asset specificat
   <br/>
   In the following example, the user is listing Apple (AAPL), JP Morgan (JPM), Lockheed Martin (LMT), and Tesla (TSLA)'s stocks as part of their portfolio. There are 4 stocks in total with a Net Liquidation Value (NLV) of $288755- the final worth of the user's account once all  positions are closed. The panel also displays the current allocation of each of the selected assets per portfolio. In this case, the account consists of 20.75% Apple-Technology, 17.65% JP Morgan-Financials, 23.02% Lockheed Martin-Industrials, and 38.58% Tesla-Consumer Cyclical, which seems fairly allocated by sectors.
   <img src="images/Multivariate-Asset Specification.png" alt='Asset Specification' width='1000' height='350'>
+</details>
+    
+<details>
+  <summary><strong>PHASE 12: Exploratory Data Analysis (EDA)<strong></summary>
+  xxx
+  <br/>
+  xxx
+  <img src="images/EDA-Scatter Matrix.png" alt='Asset Specification' width='1000' height='350'>
 </details>
 
 ## Company Examples and Key Takeaways<a name = "examples"></a>
