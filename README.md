@@ -172,10 +172,10 @@ There are four pahses for performing the multivariate analysis- asset specificat
     <details>
       <summary>Scatter Matrix:</summary> A scatter matrix is used to plot the relationships between pair variants of asset returns. It shows the direction, magnitude, linearity, strenght, and potential outliers within a return relationship.
       <ul>
-        <li>Direction: positive or negative; positive meaning as asset X's return increases (decreases), asset Y's return increases (decreases) as well; negative meaning as asset X's return increases (decreases), the asset Y's return decreases (increases.</li><br/>
-        <li>Magnitude: </li><br/>
-        <li>Linearity: </li><br/>
-        <li>Strength: </li><br/>
+        <li>Direction: positive or negative; positive meaning as asset X's return increases (decreases), asset Y's return increases (decreases) as well; negative meaning as asset X's return increases (decreases), the asset Y's return decreases (increases.</li>
+        <li>Magnitude: </li>
+        <li>Linearity: </li>
+        <li>Strength: </li>
         <li>Potential Outliers: </li>
       </ul>
       <img src="images/EDA-Scatter Matrix.png" alt='EDA-Scatter Matrix.png'>
