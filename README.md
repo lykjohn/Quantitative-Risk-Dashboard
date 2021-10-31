@@ -156,19 +156,40 @@ There are four pahses for performing the multivariate analysis- asset specificat
 
 <details>
   <summary><strong>PHASE 1: Asset Specification <strong></summary>
-  Users will specify the ticker symbol, quantity, and current price for each asset of their choice. One’s chosen assets can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This process replaces manual asset lookupd in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, and compiles a dataframe consisting the asset returns ready for analysis. The default unit of price data is in USD. With that in mind, user can now apply Exploratory Data Analysis (EDA) methods to the loaded data.
+  Users will specify the ticker symbol, quantity, and current price for each asset of their choice. Click the [Add Asset] button to add an asset and the [Remove Asset] button to remove the last asset specified. One’s chosen assets can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This process replaces manual asset lookupd in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, and compiles a dataframe consisting the asset returns ready for analysis. The default unit of price data is in USD. **Note that entering more than 10 assets may lead to considerable lag in retrieving asset data.** With that in mind, user can now apply Exploratory Data Analysis (EDA) methods to the loaded data.
   <br/>
   In the following example, the user is listing Apple (AAPL), JP Morgan (JPM), Lockheed Martin (LMT), and Tesla (TSLA)'s stocks as part of their portfolio. There are 4 stocks in total with a Net Liquidation Value (NLV) of $288755- the final worth of the user's account once all  positions are closed. The panel also displays the current allocation of each of the selected assets per portfolio. In this case, the account consists of 20.75% Apple-Technology, 17.65% JP Morgan-Financials, 23.02% Lockheed Martin-Industrials, and 38.58% Tesla-Consumer Cyclical, which seems fairly allocated by sectors.
   <img src="images/Multivariate-Asset Specification.png" alt='Asset Specification' width='1000' height='350'>
 </details>
     
+    
+    
 <details>
-  <summary><strong>PHASE 12: Exploratory Data Analysis (EDA)<strong></summary>
-  xxx
-  <br/>
-  xxx
-  <img src="images/EDA-Scatter Matrix.png" alt='Asset Specification' width='1000' height='350'>
+  <summary><strong>PHASE 2: Exploratory Data Analysis (EDA)<strong></summary>
+  The retrieved stock data is further delineated to only contain the asset's adjusted close price (in USD), which is the price after accounting for corporate actions such as stock-splits. EDA contains 2 steps: visualizing the asset’s empirical trends and assessing the distribution of asset return. After the process, user will develop a descriptive instinct on the the asset’s price evolution. Please see the following example for Apple’s stock over the same period as above. 
+ <ul>
+  <il> 
+    <details>
+      <summary>Scatter Matrix:</summary> Time plots are what we use to visualize the asset’s trends. After clicking on the [Run Time Plots] button, 2 plots will be generated, demonstrating the price trend and differenced log-returns simultaneously. For the prior, trend is important in identifying the momentum and strength as price evolves. For the later, seekers for its predictability may look at the differenced log-returns, and check for stationarity- the more stationary the series, the more predictable the asset’s return. An asset's return is represented by its log-return. Log-return is used here because it has the nice arithmetic property of normalizing values.
+      <img src="images/EDA-Scatter Matrix.png" alt='EDA-Time Plots.png'>
+    </details>
+  </il>
+  <il>  
+    <details>
+      <summary>Quantile-Quantile Plots:</summary> How asset returns are distributed would constitute the scale of risk that the asset poses in terms of an account’s gains/losses. After clicking the [Summary Statistics] button, statistics such as the standard deviation, kurtosis, and skewness are tabulated alongside with a boxplot that highlights the 25%, 50% 75% risk thresholds. These are not for evaluating probabilstic risks just yet, but rather purposed for illustrating the spread/extremeness of the asset’s return.
+  <img src="images/EDA-Multivariate QQPlots.png" alt='EDA-Summary Statistics'>
+    </details>
+  </il>
+  <il>  
+    <details>
+      <summary>Correlation Martix:</summary> How asset returns are distributed would constitute the scale of risk that the asset poses in terms of an account’s gains/losses. After clicking the [Summary Statistics] button, statistics such as the standard deviation, kurtosis, and skewness are tabulated alongside with a boxplot that highlights the 25%, 50% 75% risk thresholds. These are not for evaluating probabilstic risks just yet, but rather purposed for illustrating the spread/extremeness of the asset’s return.
+  <img src="images/EDA-Correlation Matrix.png" alt='EDA-Summary Statistics'>
+    </details>
+  </il>
+ </ul>
 </details>
+    
+    
 
 ## Company Examples and Key Takeaways<a name = "examples"></a>
 
