@@ -103,7 +103,7 @@ There are three pahses for performing the univariate analysis- asset specificati
               <img src="images/EVA-Univariate Tails-Hist & QQ.png" alt='EVA-Univariate Tails-Hist & QQ'>   
               <br/>
               The risk table displays the relative VaR and relative Expected Shortfall predicted by the selected models. To see these results, please hit the [Run Risk Table] button. Users can reference their risk based on the best-fitted model determined above. For instance, the GED model predicts that an investment in AAPL's stock has a 5% probability of losing at least 3% and on average losing 5.44%.<br/>
-              <img src="images/EVA-Univariate Tails-Risk Table.png" alt='EVA-Univariate Tails-Hist & QQ'>
+              <img src="images/EVA-Univariate Tails-Risk Table.png" alt='EVA-Univariate Tails-Risk Table'>
         </details>
      </li>
      <li>
@@ -208,18 +208,18 @@ There are four pahses for performing the multivariate analysis- asset specificat
    <li>
       <details>
         <summary>Multivariate Tails:</summary>
-        Multivariate Tails here
+          Multivariate Tails here
         
-        <img src="images/EVA-Multivariate Tails-Risk Table.png" alt='EVA-Multivariate Tails-Risk Table'>
+          <img src="images/EVA-Multivariate Tails-Risk Table.png" alt='EVA-Multivariate Tails-Risk Table'>
       </details>
    </li>
 
    <li>
       <details>
         <summary>Copula Tails:</summary>
-        Copula Tails here
+          Copula Tails here
         
-        <img src="images/EVA-Multivariate Tails-Bivariate ECDF.png" alt='EVA-Multivariate Tails-Bivariate ECDF'>
+          <img src="images/EVA-Multivariate Tails-Bivariate ECDF.png" alt='EVA-Multivariate Tails-Bivariate ECDF'>
       </details>
    </li>
   </ul>
