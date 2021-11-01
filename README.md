@@ -156,14 +156,13 @@ There are four pahses for performing the multivariate analysis- asset specificat
 
 <details>
   <summary><strong>PHASE 1: Asset Specification <strong></summary>
-  Users will specify the ticker symbol, quantity, and current price for each asset of their choice. Click the [Add Asset] button to add an asset and the [Remove Asset] button to remove the last asset specified. One’s chosen assets can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This process replaces manual asset lookupd in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, and compiles a dataframe consisting the asset returns ready for analysis. The default unit of price data is in USD. **Note that entering more than 10 assets may lead to considerable lag in retrieving asset data.** With that in mind, user can now apply Exploratory Data Analysis (EDA) methods to the loaded data.
+  Users will specify the ticker symbol, quantity, and current price for each asset of their choice. Click the [Add Asset] button to add an asset and the [Remove Asset] button to remove the last asset specified. One’s chosen assets can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This process replaces manual asset lookupd in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, and compiles a dataframe consisting the asset returns ready for analysis. The default unit of price data is in USD. <br/>
+ **Note that entering more than 10 assets may lead to considerable lag in retrieving asset data.** 
   <br/>
   In the following example, the user is listing Apple (AAPL), JP Morgan (JPM), Lockheed Martin (LMT), and Tesla (TSLA)'s stocks as part of their portfolio. There are 4 stocks in total with a Net Liquidation Value (NLV) of $288755- the final worth of the user's account once all  positions are closed. The panel also displays the current allocation of each of the selected assets per portfolio. In this case, the account consists of 20.75% Apple-Technology, 17.65% JP Morgan-Financials, 23.02% Lockheed Martin-Industrials, and 38.58% Tesla-Consumer Cyclical, which seems fairly allocated by sectors.
   <img src="images/Multivariate-Asset Specification.png" alt='Asset Specification' width='1000' height='350'>
 </details>
-    
-    
-    
+   
 <details>
   <summary><strong>PHASE 2: Exploratory Data Analysis (EDA)<strong></summary>
   Here, EDA contains 3 parts: plotting pairwise  relationship between asset returns, selecting distribution that best fits the general tail extremes, and identifying correlations between asset returns forf hedging puroses. Please see the following for implementing these parts on the Apple, JP Morgan, Lockcheed Martin, and Tesla's stock data. 
@@ -171,12 +170,14 @@ There are four pahses for performing the multivariate analysis- asset specificat
   <il> 
     <details>
       <summary>Scatter Matrix:</summary> A scatter matrix is used to plot the relationships between pair variants of asset returns. It shows the direction, magnitude, linearity, strenght, and potential outliers within a return relationship. Users may click on the [Run Scatter Matrix] button to produce this plot.
+      <br/><br/>
       <ul>
         <li>Direction: positive or negative. positive meaning as asset X's return increases (decreases), asset Y's return increases (decreases) as well; negative meaning as asset X's return increases (decreases), the asset Y's return decreases (increases).</li>
         <li>Linearity: linear or nonlinear. linear if the points are to a straight line, nonlinear otherwise.</li>
         <li>Strength: weak, moderate or strong. the more spread out the points are, the weaker the relationship. If the points are clearly clustered, or closely follow a curve or line, the relationship is described as strong.</li>
         <li>Potential Outliers: exists or don't exist.  exists for the point or points that are farthest from the regression line; these points normally stands out. DOn't exists for points closely clustered around the regression line; these points normally don't stand out.</li>
       </ul>
+      <br/>
       Take LMT and TSLA's returns for example, they have a relatively weak nonlinear positive relationship with a good amount of outliers. The direction is positive because the returns generally seems to move in the same direction. The association is weak because points seem to be scattered randomly all over the place. It is also nonlinear because the overall relationship cannot be traced by a linear line. There are many outliers because many points lie far away from the cluster. 
       <img src="images/EDA-Scatter Matrix.png" alt='EDA-Scatter Matrix.png'>
     </details>
@@ -184,19 +185,27 @@ There are four pahses for performing the multivariate analysis- asset specificat
   <il>  
     <details>
       <summary>Quantile-Quantile Plots:</summary> Here, QQ plots are used to compare the sample quantiles of asset returns thier theoretical quantiles. The objective is to evlauate the goodness of fit for various distributions (e.g., Normal, Stduent-t) on asset returns, particularly on extreme returns. A convex plot means the sample returns is more right-skewed compared to its theoretical, as a concave plot indicates more left-skewed returns. If either tail deviates from the center, this implies heavier/lighter tails, or more/less returns are located at the extremes relative to the center. In short, the closer the points lie along the linear line, the more appropriate the distibution in modeling the asset returns. Users may press the [Run QQ Plots] button to produce these plots, then select a distribution that best fits most of the plots using the drop-down option.<br/>
+      <br/>
       In the example below, t-distribution is selected to model the each of the specified asset returns. AAPL and TSLA's returns seem to be properly modeled because their quantiles lie closely along the straight line. However, JPM and LMT's return seems to have lighter tails than the theoretical Student-t distribution, but not that far off that we could still use Student-t for EDA. 
   <img src="images/EDA-Multivariate QQPlots.png" alt='DA-Multivariate QQPlots'>
     </details>
   </il>
   <il>  
     <details>
-      <summary>Correlation Martix:</summary> A correlation matrix displays the correlation between each pair of asset returns. 
+      <summary>Correlation Martix:</summary> A correlation matrix is a table that display correlations between each pair of asset returns. Correlation is a measure that lies between -1 and 1. A perfect positive correlation means that the correlation coefficient is exactly 1. This implies that as one security moves, either up or down, the other security moves in lockstep, in the same direction. Please note that a pair of highly correlated assets is a double-bladed sword- like how it could substantially uplift your profits, it could substantially deteriorate them as well. A perfect negative correlation means that two assets move in opposite directions, while a zero correlation implies no linear relationship at all. Assets with low-correlated returns are often used to hedge cyclical market movements. Users may press the [RUn Correlation Matrix] button to generate this statistic.<br/>
+      <br/>
+      In the example below, LMT and AAPL return has a correlation coefficient of 0.27, as LMT and JPM return has a correlation coefficient of 0.46. This means that when one takes position in LMT stock, they may be better off holding AAPL if their target is to multiply thier profits, and holding JPM if their target is to offset market risks.
   <img src="images/EDA-Correlation Matrix.png" alt='EDA-Correlation Matrix'>
     </details>
   </il>
  </ul>
 </details>
-    
+ 
+<details>
+  <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong></summary>
+ 
+  <img src="images/Multivariate-Asset Specification.png" alt='Asset Specification' width='1000' height='350'>
+</details>
     
 
 ## Company Examples and Key Takeaways<a name = "examples"></a>
