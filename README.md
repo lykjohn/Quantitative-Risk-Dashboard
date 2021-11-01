@@ -233,12 +233,28 @@ There are four pahses for performing the multivariate analysis- asset specificat
     
 <details>
   <summary><strong>PHASE 4: Portfolio Optimization <strong> </summary>
-    User setting here 
-    <br/>
-    <img src="images/Multivariate-Portfolio Optimization.png" alt='Multivariate-Portfolio Optimization' height='350'>
-    Portfolio Optimization here
-    <br/>
-    <img src="images/Multivariate-Portfolio Optimization-Optimal Portfolio.png" alt='Multivariate-Portfolio Optimization-Optimal Portfolio' height='500'>
+    <ul>
+      <li>
+        User setting here 
+        <br/>
+        <img src="images/Multivariate-Portfolio Optimization.png" alt='Multivariate-Portfolio Optimization' height='350'>
+      </li>
+      <li>
+        Allocation Table here
+        <br/>
+        <img src="images/Multivariate-Portfolio Optimization-Allocation Table.png" alt='Multivariate-Portfolio Optimization-Allocation Table'>
+      </li>
+      <li>
+        Optimal Portfolios here
+        <br/>
+        <img src="images/Multivariate-Portfolio Optimization-Optimal Portfolios.png" alt='Multivariate-Portfolio Optimization-Optimal Portfolios'>
+      </li>  
+      <li>
+        Market Frontiers here
+        <br/>
+        <img src="images/Multivariate-Portfolio Optimization-Market Frontiers.png" alt='Multivariate-Portfolio Optimization-Market Frontiers'>
+      </li>  
+    </ul>
 </details>
     
 
