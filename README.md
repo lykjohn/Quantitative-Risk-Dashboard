@@ -202,23 +202,27 @@ There are four pahses for performing the multivariate analysis- asset specificat
 </details>
  
 <details>
-  <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong></summary>
+  <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong> </summary>
     
-    <ul>
-      <li>
-        <details>
-          <summary>Multivariate Tails:</summary>
-          Multivariate Tails here
-        </details>
-      </li>
-      
-      <li>
-        <details>
-          <summary>Copula Tails:</summary>
-          Copula Tails here
-        </details>
-      </li>
-    </ul>
+  <ul>
+   <li>
+      <details>
+        <summary>Multivariate Tails:</summary>
+        Multivariate Tails here
+        
+        <img src="images/EVA-Multivariate Tails-Risk Table.png" alt='EVA-Multivariate Tails-Risk Table'>
+      </details>
+   </li>
+
+   <li>
+      <details>
+        <summary>Copula Tails:</summary>
+        Copula Tails here
+        
+        <img src="images/EVA-Multivariate Tails-Bivariate ECDF.png" alt='EVA-Multivariate Tails-Bivariate ECDF'>
+      </details>
+   </li>
+  </ul>
 </details>
     
 
