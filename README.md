@@ -170,7 +170,7 @@ There are four pahses for performing the multivariate analysis- asset specificat
  <ul>
   <il> 
     <details>
-      <summary>Scatter Matrix:</summary> A scatter matrix is used to plot the relationships between pair variants of asset returns. It shows the direction, magnitude, linearity, strenght, and potential outliers within a return relationship.
+      <summary>Scatter Matrix:</summary> A scatter matrix is used to plot the relationships between pair variants of asset returns. It shows the direction, magnitude, linearity, strenght, and potential outliers within a return relationship. Users may click on the [Run Scatter Matrix] button to produce this plot.
       <ul>
         <li>Direction: positive or negative. positive meaning as asset X's return increases (decreases), asset Y's return increases (decreases) as well; negative meaning as asset X's return increases (decreases), the asset Y's return decreases (increases).</li>
         <li>Linearity: linear or nonlinear. linear if the points are to a straight line, nonlinear otherwise.</li>
@@ -183,13 +183,14 @@ There are four pahses for performing the multivariate analysis- asset specificat
   </il>
   <il>  
     <details>
-      <summary>Quantile-Quantile Plots:</summary> How asset returns are distributed would constitute the scale of risk that the asset poses in terms of an account’s gains/losses. After clicking the [Summary Statistics] button, statistics such as the standard deviation, kurtosis, and skewness are tabulated alongside with a boxplot that highlights the 25%, 50% 75% risk thresholds. These are not for evaluating probabilstic risks just yet, but rather purposed for illustrating the spread/extremeness of the asset’s return.
+      <summary>Quantile-Quantile Plots:</summary> Here, QQ plots are used to compare the sample quantiles of asset returns thier theoretical quantiles. The objective is to evlauate the goodness of fit for various distributions (e.g., Normal, Stduent-t) on asset returns, particularly on extreme returns. A convex plot means the sample returns is more right-skewed compared to its theoretical, as a concave plot indicates more left-skewed returns. If either tail deviates from the center, this implies heavier/lighter tails, or more/less returns are located at the extremes relative to the center. In short, the closer the points lie along the linear line, the more appropriate the distibution in modeling the asset returns. Users may press the [Run QQ Plots] button to produce these plots, then select a distribution that best fits most of the plots using the drop-down option.<br/>
+      In the example below, t-distribution is selected to model the each of the specified asset returns. AAPL and TSLA's returns seem to be properly modeled because their quantiles lie closely along the straight line. However, JPM and LMT's return seems to have lighter tails than the theoretical Student-t distribution, but not that far off that we could still use Student-t for EDA. 
   <img src="images/EDA-Multivariate QQPlots.png" alt='DA-Multivariate QQPlots'>
     </details>
   </il>
   <il>  
     <details>
-      <summary>Correlation Martix:</summary> How asset returns are distributed would constitute the scale of risk that the asset poses in terms of an account’s gains/losses. After clicking the [Summary Statistics] button, statistics such as the standard deviation, kurtosis, and skewness are tabulated alongside with a boxplot that highlights the 25%, 50% 75% risk thresholds. These are not for evaluating probabilstic risks just yet, but rather purposed for illustrating the spread/extremeness of the asset’s return.
+      <summary>Correlation Martix:</summary> A correlation matrix displays the correlation between each pair of asset returns. 
   <img src="images/EDA-Correlation Matrix.png" alt='EDA-Correlation Matrix'>
     </details>
   </il>
