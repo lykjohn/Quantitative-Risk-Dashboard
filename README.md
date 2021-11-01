@@ -231,6 +231,16 @@ There are four pahses for performing the multivariate analysis- asset specificat
   </ul>
 </details>
     
+<details>
+  <summary><strong>PHASE 4: Portfolio Optimization <strong> </summary>
+    User setting here 
+    <br/>
+    <img src="images/Multivariate-Portfolio Optimization.png" alt='Multivariate-Portfolio Optimization'>
+    Portfolio Optimization here
+    <br/>
+    <img src="images/Multivariate-Portfolio Optimization-Optimal Portfolio.png" alt='Multivariate-Portfolio Optimization-Optimal Portfolio' >
+</details>
+    
 
 ## Company Examples and Key Takeaways<a name = "examples"></a>
 
