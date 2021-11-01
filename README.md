@@ -210,7 +210,7 @@ There are four pahses for performing the multivariate analysis- asset specificat
         <summary>Multivariate Tails:</summary>
           Multivariate Tails here
         
-          <img src="images/EVA-Multivariate Tails-Risk Table.png" alt='EVA-Multivariate Tails-Risk Table'>
+          <img src="images/EVA-Multivariate Tails-Risk Table.png" alt='EVA-Multivariate Tails-Risk Table' width='1000' height='1000'>
       </details>
    </li>
 
