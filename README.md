@@ -218,7 +218,7 @@ There are four pahses for performing the multivariate analysis- asset specificat
  
 <details>
   <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong> </summary>
-    
+  Rather than evaluating the potential risks of one asset, EVA here evaluates the collective risk of multiple assets. Firstly, some off-the-shelf multivariate  distributions (e.g., Normal, Student-t) are examined; these models uses Maximum Likelihood Estimation (MLE) to estimate their parameters and do not account for tail dependencies. If the portfolio returns are assumed to be multivariate normal, then the individual asset returns are assuemd to be univariate normal. Likewise for the Student-t case. However, more often than not, asset returns from the real market are not perfectly normal or Student-t. That's why copula models are used to account for tail dependencies. 
 
    <ul>
       <details>
