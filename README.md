@@ -231,7 +231,8 @@ There are four pahses for performing the multivariate analysis- asset specificat
               <img src="images/EVA-Multivariate Tails-Risk Table.png" alt='EVA-Multivariate Tails-Risk Table'>
             </li>
             <li>
-              Bivariate ECDF here
+              THe Bivariate Empirical Cumulative Distibution Function (ECDF) plot serves as a diagnostic benchmark to compare the estimated quantile values for each pair of asset returns in the specified portfolio. If the estimated quantiles (red) closely align with empirical quantiles (blue), then this means the elected distribution fits the portfolio returns well. <br/>
+              For instance, for the portfolio containing AAPL, JPM, LMT, and TSLA, since the estimated quantiles aligns closer for multivariate Student-t than for multivariate Normal across all pairs of stock returns, it is fair to evaluate our risk metrics using the multivariate Student-t model.
               <br/>
               <img src="images/EVA-Multivariate Tails-Bivariate ECDF.png" alt='EVA-Multivariate Tails-Bivariate ECDF' width='2000' height='500'>
             </li>
