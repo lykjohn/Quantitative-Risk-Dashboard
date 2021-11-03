@@ -218,14 +218,15 @@ There are four pahses for performing the multivariate analysis- asset specificat
  
 <details>
   <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong> </summary>
-  Rather than evaluating the potential risks of one asset, EVA here evaluates the collective risk of multiple assets. At first, some off-the-shelf multivariate  distributions (e.g., Normal, Student-t) are examined; these models uses Maximum Likelihood Estimation (MLE) to estimate their parameters and do not account for tail dependencies. If the portfolio returns are assumed to be multivariate normal, then the individual asset returns are assuemd to be univariate normal. Likewise for the Student-t case. However, more often than not, asset returns from the real market are not perfectly normal or Student-t. That's why copula models are used to account for tail dependencies. 
+  Rather than evaluating the potential risks of one asset, EVA here evaluates the collective risk of multiple assets. At first, some off-the-shelf multivariate  distributions (e.g., Normal, Student-t) are examined; these models uses Maximum Likelihood Estimation (MLE) to estimate their parameters and do not account for tail dependencies. If the portfolio returns are assumed to be multivariate normal, then the individual asset returns are assuemd to be univariate normal. Likewise for the Student-t case. However, more often than not, asset returns from the real market are not perfectly normal or Student-t. That's why copula models are used to account for tail dependencies. Although not shown, VaR is set to 5% in the examples that follow.
 
    <ul>
       <details>
         <summary>Multivariate Tails:</summary>
           <ul>
             <li>
-              Risk Table here 
+              Here, multivariate Normal and Student-t distributions are used to fit the returns of the speceified asset. For the prior, any linear combination of the multivariate noraml returns has a univariate normal distribution. For the later, observations of independent paired returns with, say t<sub>3</sub>(0,1), tends to have outliers concentrated near extreme returns, while observations of their uncorrelated version tends to have outliers uniformly distributed in all directions. Please hit the [Run Risk Table] button to see risks at the specified level. <br/>
+              From our case above, since we selected Student-t to better fit our portfolio returns, we can use it to interpret the following result- assuming multivariate Student-t distribution, there is a 5% probability our portfolio to lose at least a 3.10 % and on average losing 5.54%.
               <br/>
               <img src="images/EVA-Multivariate Tails-Risk Table.png" alt='EVA-Multivariate Tails-Risk Table'>
             </li>
