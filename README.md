@@ -243,6 +243,9 @@ There are four pahses for performing the multivariate analysis- asset specificat
    <ul>
       <details>
         <summary>Copula Tails:</summary>
+        The primary financial application of copula models is risk assessment and management of portfolios that contain assets which exhibit co-movements in
+extreme behavior. For example, a pair of assets may have weakly correlated returns, but their largest losses may tend to occur in the same periods. They
+are commonly applied to portfolios of loans, bonds, and Collateralized Debt Obligations (CDOs).
           <ul>
             <li>
               Risk Table here
