@@ -67,14 +67,14 @@ There are three pahses for performing the univariate analysis- asset specificati
 <details>
   <summary><strong>PHASE 1: Asset Specification <strong></summary>
   Users will specify asset ticker symbols from their asset of choice. One’s asset of choice can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This is equivalent to searching up the ticker in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, clicking “Historical Data“, then setting the “Time Period”. R will then load in the resulted data from the webpage. The default unit of price data is in USD. With that in mind, user can now apply Exploratory Data Analysis (EDA) methods to the loaded data.
-  <br/>
+  <br/><br/>
   In the following example, the user is searching up Apple's stock- with the ticker symbol AAPL, to retrieve stock data from 10/01/2019-10/01/2021.
   <img src="images/Univariate-Asset Specification.png" alt='Asset Specification' width='1000' height='350'>
 </details>
 
 <details>
   <summary><strong>PHASE 2: Exploratory Data Analysis (EDA)<strong></summary>
-  The retrieved stock data is further delineated to only contain the asset's adjusted close price (in USD), which is the price after accounting for corporate actions such as stock-splits. EDA contains 2 steps: first, visualizing the asset’s empirical trends and second, assessing the distribution of asset return. After the process, user will develop a descriptive instinct on the the asset’s price evolution. Please see the following example for Apple’s stock over the same period as above. 
+  The retrieved stock data is further delineated to only contain the asset's adjusted close price (in USD), which is the price after accounting for corporate actions such as stock-splits. EDA contains 2 steps: first, visualizing the asset’s empirical trends and second, assessing the distribution of asset return. After the process, user will develop a descriptive instinct on the the asset’s price evolution. Please see the following example for Apple’s stock over the same period as above.<br/><br/> 
   <ul>
     <details>
       <summary>Time Plots:</summary> Time plots are what we use to visualize the asset’s trends. After clicking on the [Run Time Plots] button, 2 plots will be generated, demonstrating the price trend and differenced log-returns simultaneously. For the prior, trend is important in identifying the momentum and strength as price evolves. For the later, seekers for its predictability may look at the differenced log-returns, and check for stationarity- the more stationary the series, the more predictable the asset’s return. An asset's return is represented by its log-return. Log-return is used here because it has the nice arithmetic property of normalizing values.
@@ -91,8 +91,7 @@ There are three pahses for performing the univariate analysis- asset specificati
     
 <details>
   <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong></summary>
-    The goal of EVA is to seek probability distributions that best fit the tails of the asset's log returns, which in turn helps accurately model the Value-at-Risk(VaR) and Expected Shortfalls of an investment. To do this, some off-the-shelf univariate distributions are first examined, followed by Generalized Pareto Distibutions, then time-series ARMA/GARCH variants to model returns & volatilies with monitored residuals. 
-
+    The goal of EVA is to seek probability distributions that best fit the tails of the asset's log returns, which in turn helps accurately model the Value-at-Risk(VaR) and Expected Shortfalls of an investment. To do this, some off-the-shelf univariate distributions are first examined, followed by Generalized Pareto Distibutions, then time-series ARMA/GARCH variants to model returns & volatilies with monitored residuals. <br/><br/>
    <ul>
       <details>
         <summary>Univariate Tails:</summary>
@@ -172,17 +171,16 @@ There are four pahses for performing the multivariate analysis- asset specificat
 
 <details>
   <summary><strong>PHASE 1: Asset Specification <strong></summary>
-  Users will specify the ticker symbol, quantity, and current price for each asset of their choice. Click the [Add Asset] button to add an asset and the [Remove Asset] button to remove the last asset specified. One’s chosen assets can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This process replaces manual asset lookupd in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, and compiles a dataframe consisting the asset returns ready for analysis. The default unit of price data is in USD. <br/>
- **Note that entering more than 10 assets may lead to considerable lag in retrieving asset data.** 
-  <br/>
+  Users will specify the ticker symbol, quantity, and current price for each asset of their choice. Click the [Add Asset] button to add an asset and the [Remove Asset] button to remove the last asset specified. One’s chosen assets can range from stocks, ETF, currencies, cryptocurrencies, etc., be they foreign or domestic. This process replaces manual asset lookupd in <a href="https://finance.yahoo.com/"> Yahoo Finance</a>, and compiles a dataframe consisting the asset returns ready for analysis. The default unit of price data is in USD. <br/><br/>
+ **Note that entering more than 10 assets may lead to considerable lag time in retrieving asset data.** 
+  <br/><br/>
   In the following example, the user is listing Apple (AAPL), JP Morgan (JPM), Lockheed Martin (LMT), and Tesla (TSLA)'s stocks as part of their portfolio. There are 4 stocks in total with a Net Liquidation Value (NLV) of $288755- the final worth of the user's account once all  positions are closed. The panel also displays the current allocation of each of the selected assets per portfolio. In this case, the account consists of 20.75% Apple-Technology, 17.65% JP Morgan-Financials, 23.02% Lockheed Martin-Industrials, and 38.58% Tesla-Consumer Cyclical, which seems fairly allocated by sectors.
   <img src="images/Multivariate-Asset Specification.png" alt='Asset Specification' width='1000' height='350'>
 </details>
    
 <details>
   <summary><strong>PHASE 2: Exploratory Data Analysis (EDA)<strong></summary>
-  Here, EDA contains 3 parts: plotting pairwise  relationship between asset returns, selecting distribution that best fits the general tail extremes, and identifying correlations between asset returns forf hedging puroses. Please see the following for implementing these parts on the Apple, JP Morgan, Lockcheed Martin, and Tesla's stock data. 
-
+  Here, EDA contains 3 parts: plotting pairwise  relationship between asset returns, selecting distribution that best fits the general tail extremes, and identifying correlations between asset returns forf hedging puroses. Please see the following for implementing these parts on the Apple, JP Morgan, Lockcheed Martin, and Tesla's stock data.<br/><br/>
   <ul> 
     <details>
       <summary>Scatter Matrix:</summary> A scatter matrix is used to plot the relationships between pair variants of asset returns. It shows the direction, magnitude, linearity, strenght, and potential outliers within a return relationship. Users may click on the [Run Scatter Matrix] button to produce this plot.
@@ -218,12 +216,11 @@ There are four pahses for performing the multivariate analysis- asset specificat
  
 <details>
   <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong> </summary>
-  Rather than evaluating the potential risks of one asset, EVA here evaluates the collective risk of multiple assets. At first, some off-the-shelf multivariate  distributions (e.g., Normal, Student-t) are examined; these models uses Maximum Likelihood Estimation (MLE) to estimate their parameters and do not account for tail dependencies. If the portfolio returns are assumed to be multivariate normal, then the individual asset returns are assuemd to be univariate normal. Likewise for the Student-t case. However, more often than not, asset returns from the real market are not perfectly normal or Student-t. That's why copula models are used to account for tail dependencies. Although not shown, VaR is set to 5% in the examples that follow.<br/>
-
+  Rather than evaluating the potential risks of one asset, EVA here evaluates the collective risk of multiple assets. At first, some off-the-shelf multivariate  distributions (e.g., Normal, Student-t) are examined; these models uses Maximum Likelihood Estimation (MLE) to estimate their parameters and do not account for tail dependencies. If the portfolio returns are assumed to be multivariate normal, then the individual asset returns are assuemd to be univariate normal. Likewise for the Student-t case. However, more often than not, asset returns from the real market are not perfectly normal or Student-t. That's why copula models are used to account for tail dependencies. Although not shown, VaR is set to 5% in the examples that follow.<br/><br/>
    <ul>
       <details>
         <summary>Multivariate Tails:</summary>
-        Here, multivariate Normal and Student-t distributions are used to fit the returns of the speceified asset. For the prior, any linear combination of the multivariate noraml returns has a univariate normal distribution. For the later, observations of independent paired returns with, say t<sub>3</sub>(0,1), tends to have outliers concentrated near extreme returns, while observations of their uncorrelated version tends to have outliers uniformly distributed in all directions. <br/>
+        Here, multivariate Normal and Student-t distributions are used to fit the returns of the speceified asset. For the prior, any linear combination of the multivariate noraml returns has a univariate normal distribution. For the later, observations of independent paired returns with, say t<sub>3</sub>(0,1), tends to have outliers concentrated near extreme returns, while observations of their uncorrelated version tends to have outliers uniformly distributed in all directions. <br/><br/>
           <ul>
             <li>
               Please hit the [Run Risk Table] button to see risks at the specified level. Users may also specify which model(s) to show using the checkbox. From our EDA, since we selected Student-t to better fit our portfolio returns, we can use it to interpret the following result- assuming multivariate Student-t distribution, there is a 5% probability for our portfolio to lose at least a 3.10 % and on average losing 5.54%.
@@ -245,7 +242,7 @@ There are four pahses for performing the multivariate analysis- asset specificat
         <summary>Copula Tails:</summary>
         The primary financial application of copula models is risk assessment and management of portfolios that contain assets which exhibit co-movements in
 extreme behavior. For example, a pair of assets may have weakly correlated returns, but their largest losses may tend to occur in the same periods. They
-are commonly applied to portfolios of loans, bonds, and Collateralized Debt Obligations (CDOs).<br/>
+are commonly applied to portfolios of loans, bonds, and Collateralized Debt Obligations (CDOs).<br/><br/>
           <ul>
             <li>
               Copulas allow seperation between estimation of the marginal distributions of stock returns and their joint dependency structure, and thus can
