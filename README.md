@@ -218,12 +218,12 @@ There are four pahses for performing the multivariate analysis- asset specificat
  
 <details>
   <summary><strong>PHASE 3: Extreme Value Analysis (EVA) <strong> </summary>
-  Rather than evaluating the potential risks of one asset, EVA here evaluates the collective risk of multiple assets. At first, some off-the-shelf multivariate  distributions (e.g., Normal, Student-t) are examined; these models uses Maximum Likelihood Estimation (MLE) to estimate their parameters and do not account for tail dependencies. If the portfolio returns are assumed to be multivariate normal, then the individual asset returns are assuemd to be univariate normal. Likewise for the Student-t case. However, more often than not, asset returns from the real market are not perfectly normal or Student-t. That's why copula models are used to account for tail dependencies. Although not shown, VaR is set to 5% in the examples that follow.
+  Rather than evaluating the potential risks of one asset, EVA here evaluates the collective risk of multiple assets. At first, some off-the-shelf multivariate  distributions (e.g., Normal, Student-t) are examined; these models uses Maximum Likelihood Estimation (MLE) to estimate their parameters and do not account for tail dependencies. If the portfolio returns are assumed to be multivariate normal, then the individual asset returns are assuemd to be univariate normal. Likewise for the Student-t case. However, more often than not, asset returns from the real market are not perfectly normal or Student-t. That's why copula models are used to account for tail dependencies. Although not shown, VaR is set to 5% in the examples that follow.<br/>
 
    <ul>
       <details>
         <summary>Multivariate Tails:</summary>
-        Here, multivariate Normal and Student-t distributions are used to fit the returns of the speceified asset. For the prior, any linear combination of the multivariate noraml returns has a univariate normal distribution. For the later, observations of independent paired returns with, say t<sub>3</sub>(0,1), tends to have outliers concentrated near extreme returns, while observations of their uncorrelated version tends to have outliers uniformly distributed in all directions. 
+        Here, multivariate Normal and Student-t distributions are used to fit the returns of the speceified asset. For the prior, any linear combination of the multivariate noraml returns has a univariate normal distribution. For the later, observations of independent paired returns with, say t<sub>3</sub>(0,1), tends to have outliers concentrated near extreme returns, while observations of their uncorrelated version tends to have outliers uniformly distributed in all directions. <br/>
           <ul>
             <li>
               Please hit the [Run Risk Table] button to see risks at the specified level. Users may also specify which model(s) to show using the checkbox. From our EDA, since we selected Student-t to better fit our portfolio returns, we can use it to interpret the following result- assuming multivariate Student-t distribution, there is a 5% probability for our portfolio to lose at least a 3.10 % and on average losing 5.54%.
@@ -231,7 +231,7 @@ There are four pahses for performing the multivariate analysis- asset specificat
               <img src="images/EVA-Multivariate Tails-Risk Table.png" alt='EVA-Multivariate Tails-Risk Table'>
             </li>
             <li>
-              The Bivariate Empirical Cumulative Distibution Function (ECDF) plots serve as a diagnostic benchmark to compare the estimated quantile values for each pair of asset returns in the specified portfolio. If the estimated quantiles (red) closely align with empirical quantiles (blue), then this means the elected distribution fits the portfolio returns well. Hitting the [Run Bivariate ECDF Plots] button can generate these plots.<br/>
+              The Bivariate Empirical Cumulative Distibution Function (ECDF) plots serve as a diagnostic benchmark to compare the estimated quantile values for each pair of asset returns in the specified portfolio. If the estimated quantiles (red) closely align with empirical quantiles (blue), then this means the elected distribution fits the portfolio returns well. Hitting the [Run Bivariate ECDF Plots] button can generate these plots.<br/><br/>
               For instance, for the portfolio containing AAPL, JPM, LMT, and TSLA, since the estimated quantiles aligns closer for multivariate Student-t than for multivariate Normal across all pairs of stock returns, it is fair to evaluate our risk metrics using the multivariate Student-t model.
               <br/>
               <img src="images/EVA-Multivariate Tails-Bivariate ECDF.png" alt='EVA-Multivariate Tails-Bivariate ECDF' width='2000' height='500'>
@@ -245,21 +245,21 @@ There are four pahses for performing the multivariate analysis- asset specificat
         <summary>Copula Tails:</summary>
         The primary financial application of copula models is risk assessment and management of portfolios that contain assets which exhibit co-movements in
 extreme behavior. For example, a pair of assets may have weakly correlated returns, but their largest losses may tend to occur in the same periods. They
-are commonly applied to portfolios of loans, bonds, and Collateralized Debt Obligations (CDOs).
+are commonly applied to portfolios of loans, bonds, and Collateralized Debt Obligations (CDOs).<br/>
           <ul>
             <li>
               Copulas allow seperation between estimation of the marginal distributions of stock returns and their joint dependency structure, and thus can
 provide sound estimation of the true joint distribution between stock returns. At first, we use multivariate Normal and Student t-distributions to generate families of copulas. If the collection of multivariate asset returns have a Normal copula, it does not mean the univariate marginal distributions for each asset's returns are univariate Normal. This is also true for the Student-t case. Later on, we used some Archimedian copulas- Clayton, Gumbel, Frank, and Joe- with their distinct convergence and dependency properties. For example, a Gumbel copula is the independence copula when theta in its generation function is 1 and converges to co-monotonicity copula when theta goes to infinity. Since the copula approach allows investors to fins the probability of having two large losses/gains simultaneously, it is widely used in pairs trading. 
-              <br/>
+              <br/><br/>
               Users may click on the [Run Risk Table] button to see how each copula model evaluate risks for our portfolio. The result is ordered by the quality of AIC and BIC measures, with the smallest AIC/BIC indicating the best model and the largest AIC/BIC indicating the worst model. Plaease mind that, although the resutls using two criteria are generally the same, AIC tends to choose models with larger number of parameters as BIC does the opposite because it applies higher parameter penalty than AIC. 
-              <br/>
+              <br/><br/>
               Here, the criteria indicates Student-t as the best model and Joe as the worst. Based on the best model, there is a 5% probability for our portfolio to lose at least a 3.15 % and on average losing 5.63%. Users may chose to trust approach over the pure multivariate one above.
               <br/>
               <img src="images/EVA-Copula Tails-Risk Table.png" alt='EVA-Copula Tails-Risk Table'>
             </li>
             <li>
               Users may follow through by running the ECDF plots for paired returns for each copula model. This can be done by hitting the [Run Bivariate ECDF Plots] button in this session. For simplicity, just the ECDFs for the multivariate Normal and Student-t copulas are generated. Users may select more copula model results to show using the checkbox. 
-              <br/>
+              <br/><br/>
               Using the same principle as above, for the portfolio containing AAPL, JPM, LMT, and TSLA, since the estimated quantiles aligns closer for multivariate Student-t copula relative to multivariate Normal case across all pairs of stock returns, it is fair to evaluate our risk metrics using the multivariate Student-t copula model. Of course, a more holistic practice would be to compare the ECDF plots across all copula models, including the Archimedians, before considering which model(s) to trust.
               <br/>
               <img src="images/EVA-Copula Tails-Bivariate ECDF.png" alt='EVA-Copula Tails-Bivariate ECDF'>
