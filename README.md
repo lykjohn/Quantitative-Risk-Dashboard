@@ -271,10 +271,10 @@ provide sound estimation of the true joint distribution between stock returns. A
     
 <details>
   <summary><strong>PHASE 4: Portfolio Optimization <strong> </summary>
-    Suppose that a portfolio contains N different assets, how should we allocate them in order to hit an r% daily return target at minimal risk? Quadratic programming is used to help suggest solutions based on user-specified buying/selling conditions. Before generating the solutions, users may specify the range of daily return target (default daily return is set to 5%) and the U.S. annual risk free rate (e.g., U.S. 10-year treasury bond yield) used to compute reward-to-risk ratios. With these settings, allocation and market frontier vizualizations are generated to reflect the optimization results. 
+    Suppose that a portfolio contains N different assets, how should we allocate them in order to hit an r% daily return target at minimal risk? Quadratic programming is used to help suggest solutions based on user-specified buying/selling conditions. 
     <ul>
       <li>
-        User setting here 
+        Before generating the solutions, users must specify the range of daily return target (default daily return is set to 5%) and the U.S. annual risk free rate (e.g., U.S. 10-year treasury bond yield). The daily target return target is set such that the portfolio risk is minimized in the classical mean-variance framework subject to the expected return. The U.S. annual risk free rate is specified to compute the reqard-to-risk ratio such as teh Sharpe Ratio to evaluate the performance of tangency and minimum-variance portfolio assumptions.
         <br/>
         <img src="images/Multivariate-Portfolio Optimization.png" alt='Multivariate-Portfolio Optimization' height='350'>
       </li>
