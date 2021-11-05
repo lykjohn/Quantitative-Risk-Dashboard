@@ -163,7 +163,7 @@ There are three pahses for performing the univariate analysis- asset specificati
      </details>
    </ul>
 </details>
-
+     
 ### Multivariate (multiple-asset) Analysis
 There are four pahses for performing the multivariate analysis- asset specification, Exploratory Data Analysis (EDA), Extreme Value Analysis (EVA), and portfolio optimization. These precedures allow user to firstly, define their asset of choice and the time horizon to consider, secondly, understand the trend and spread of its returns, and thirdly, estimate the proportion of portfolio that was being risked at some specified level. Each of the phases are elaborated below.
   
