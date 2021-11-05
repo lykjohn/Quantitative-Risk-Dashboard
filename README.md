@@ -279,7 +279,7 @@ provide sound estimation of the true joint distribution between stock returns. A
         <img src="images/Multivariate-Portfolio Optimization.png" alt='Multivariate-Portfolio Optimization' height='350'>
       </li>
       <li>
-        Allocation Table here
+        Users may press the [Run Optimal Table] to compare allocations of the tangent and minimum-variance portfolios, allowing for short-sell and no-short-sell constraints. A tangency portfolio has maximized expected return relative to its risk, while a minimum-variance portfolio has minimized risk regardles of its expected return. Here, <b>TAN.SS</b>= Tangency Portfolio with Short-Sell, <b>MINVAR.SS</b>= Minimum-Variance Portfolio with Short-Sell, <b>TAN.NSS</b>= Tangency Portfolio with No Short-Sell, <b>MINVAR.SS</b>= Minimum-Variance Portfolio with No-Short-Sell. For example, the portfolio with the lowest risk that yields a 0&-5% daily return and allows for short-selling is the one with 31% APPL, 11% JPM, 55% LMT, and 3% TSLA; the portfolio with the maximum reward-to-risk ratio that yields a 0&-5% daily return and does not allows for short-selling is the one with 24% APPL, 0% JPM, 0% LMT, and 76% TSLA... 
         <br/>
         <img src="images/Multivariate-Portfolio Optimization-Allocation Table.png" alt='Multivariate-Portfolio Optimization-Allocation Table'>
       </li>
