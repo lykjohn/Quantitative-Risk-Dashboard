@@ -12,7 +12,7 @@
 [![Setup Automated](/images/linkedin.svg)](https://www.linkedin.com/in/lykjohn)
 [![Setup Automated](/images/cv.svg)](https://github.com/lykjohn/Resume/blob/main/Resume.pdf)
 
-[What is This About?](#about)&nbsp;|&nbsp;[How It Works](#how_it_works)&nbsp;|&nbsp;[Quick Start](#quick_start)&nbsp;|&nbsp; [Examples](#examples)&nbsp;|&nbsp;[Limitations](#limitations)&nbsp;|&nbsp;[Why This Program?](#differences)&nbsp;|&nbsp;[References](#references)&nbsp;|&nbsp;[Other Projects](#projects)&nbsp;
+[What is This About?](#about)&nbsp;|&nbsp;[How It Works](#how_it_works)&nbsp;|&nbsp;[Quick Start](#quick_start)&nbsp;|&nbsp; [Univariate Analysis](#univariate)&nbsp;|&nbsp;[Multivariate Analysis](#multivariate)&nbsp;|&nbsp;[References](#references)&nbsp;|&nbsp;[Other Projects](#projects)&nbsp;
 
 ## What is this about? <a name = "about"></a>
 Have you just started your investment journey and wondered how much to invest? Did you follow promising strategies but still see your account in red? Are you worried about the risk that you cannot foresee in your holdings? If you are nodding along these questions, know that you are not alone. In fact, these are what professionals like quants, traders, and asset managers wonder but fail to solve all the time- one often enters the market with a correct timing at a correct price but walks out with a flat wallet, and worse off, with margin debt. The Quantitative Risk Dashboard is a research tool that helps users demystify risk prospects of any U.S. listed stocks. It delivers results from risk modeling, position tracking, and portfolio optimization tactics adopted in proprietary solutions. Users of the dashboard are expected to enter the market with a statistical edge, while being reminded about the key question- how much are you prepared to lose?
@@ -60,7 +60,7 @@ install.packages("spsComps")
 ```
 </ol> 
 
-## Univariate (single-asset) Analysis
+## Univariate (single-asset) Analysis <a name = "univariate"></a>
 There are three pahses for performing the univariate analysis- asset specification, Exploratory Data Analysis (EDA), and Extreme Value Analysis (EVA). These precedures allow user to firstly, define their asset of choice and the time horizon to consider, secondly, understand the trend and spread of its returns, and thirdly, estimate the proportion of portfolio that was being risked at some specified level. Each of the phases are elaborated below.
 
 <img src="images/Univariate Analysis.png" alt='Univariate Analysis' width='750' height='350'>
@@ -164,7 +164,7 @@ There are three pahses for performing the univariate analysis- asset specificati
    </ul>
 </details>
      
-## Multivariate (multiple-asset) Analysis
+## Multivariate (multiple-asset) Analysis <a name = "multivariate"></a>
 There are four pahses for performing the multivariate analysis- asset specification, Exploratory Data Analysis (EDA), Extreme Value Analysis (EVA), and portfolio optimization. These precedures allow user to firstly, define their asset of choice and the time horizon to consider, secondly, understand the trend and spread of its returns, and thirdly, estimate the proportion of portfolio that was being risked at some specified level. Each of the phases are elaborated below.
   
 <img src="images/Multivariate Analysis.png" alt='Multivariate Analysis' width='750' height='350'>
@@ -297,15 +297,11 @@ provide sound estimation of the true joint distribution between stock returns. A
     </ul>
 </details>
     
-
-## Company Examples and Key Takeaways<a name = "examples"></a>
-
-## Limitations <a name = "limitations"></a>
-
-## Why This Application? <a name = "differences"></a>
-
 ## References <a name = "references"></a>
 
+    
+    
+    
 ## Other Projects <a name = "projects"></a>
 <ul>
   <li> <a href="https://github.com/lykjohn/SEC-Python-Scraper"> U.S. Securities and Exchange Commission (SEC) Python Scraper</a> </li>
