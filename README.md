@@ -298,9 +298,7 @@ provide sound estimation of the true joint distribution between stock returns. A
 </details>
     
 ## References <a name = "references"></a>
-
-    
-    
+<a href="https://ethz.ch/content/dam/ethz/special-interest/math/statistics/sfs/Education/Advanced%20Studies%20in%20Applied%20Statistics/course-material-1921/FinancialData/2710528_1_ruppert.pdf"> Ruppert, D. and Matteson, D. (2015) Statistics and Data Analysis for Financial Engineering with R Examples, Springer. </a>
     
 ## Other Projects <a name = "projects"></a>
 <ul>
