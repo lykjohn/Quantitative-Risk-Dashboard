@@ -284,7 +284,7 @@ provide sound estimation of the true joint distribution between stock returns. A
         <img src="images/Multivariate-Portfolio Optimization-Allocation Table.png" alt='Multivariate-Portfolio Optimization-Allocation Table'>
       </li>
       <li>
-        Optimal Portfolios here
+        The optimal portfolio distribution are also plotted here 4 barplots. Each barplot represents one of the 4 types of portfolios, with their expected returns (daily returns) and standard deviations (risks) listed on top. How a user might select distributions to implement depends on their own style. For example, if a user is extremely risk adverse, then he/she might chose the MINVAR.NSS or MINVAR.SS because they both have the same amount of risk at 0.01817 and expected daily return at 0.1%. In fact, our current portfolio performs even better than these because it exhibits a lower amount of risk at 0.00059 and a higher expected daily return at 0.324%. If a user is carefree of risks and only cares about returns, then he/she might chose the TAN.SS because it yields a 0.811% daily expected return, the highest among all portfolios listed. 
         <br/>
         <img src="images/Multivariate-Portfolio Optimization-Optimal Portfolios.png" alt='Multivariate-Portfolio Optimization-Optimal Portfolios'>
       </li>  
